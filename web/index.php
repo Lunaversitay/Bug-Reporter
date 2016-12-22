@@ -21,7 +21,7 @@
         <?php
         $connection = new mysqli("localhost", "user", "password", "db_table");
 
-        $result = mysqli_query($connection, "SELECT * FROM bug_report");
+        $result = mysqli_query($connection, "SELECT SteamID,BugReport FROM bug_report");
 
         while($row = mysqli_fetch_assoc($result)){   //Creates a loop to loop through results
             echo "<tr>" . "<td>" . $row['SteamID'] . "</td>" . "<td>" . $row['BugReport'] . "</td>" .  "</tr>" . "<br>"; 
