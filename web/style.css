@@ -2,6 +2,6 @@ body{
 	background-color: lightblue;
 	background-image: url("logo.png");
 	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top center;
+    	background-attachment: fixed;
+    	background-position: top center;
 }
