@@ -1,0 +1,1 @@
+CREATE TABLE bug_report (BugReport VARCHAR(100), SteamID VARCHAR(20));
