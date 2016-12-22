@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-    	<title>3FX Bug Reports</title>
-    	<link rel="stylesheet" type="text/css" href="style.css">
+    		<title>3FX Bug Reports</title>
+    		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 	<body>
@@ -36,6 +36,6 @@
 	</body>
 
 	<footer>
-    	<center><p>&copy;2016 Subject_Alpha</p></center>
+    		<center><p>&copy;2016 Subject_Alpha</p></center>
 	</footer>
 </html>
