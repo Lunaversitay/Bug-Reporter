@@ -1,9 +1,9 @@
 <?php
 // Edit this --->
-$db_host = "";
-$db_name = "";
-$db_user = "";
-$db_pass = "";
+$db_host = "127.0.0.1"; // db host (127.0.0.1 is localhost)
+$db_name = ""; // the name of the database
+$db_user = ""; // the username of the db account
+$db_pass = ""; // password of the db account
 // Edit this <---
 try{
 $host = "mysql:host=$db_host;dbname=$db_name";
@@ -33,8 +33,8 @@ $bug = $bug_report->fetchAll(PDO::FETCH_ASSOC); // Grab the data
   <div class="center-page">
     <div>
       <tbody>
-      <table>
-        <tr><td colspan="2">Bug Reports</td></tr>
+      <table class="center-table">
+        <tr><td colspan="2" style="text-align:center;">Bug Reports</td></tr>
         <tr>
           <td>SteamID</td>
           <td>Description</td>
@@ -45,7 +45,7 @@ $bug = $bug_report->fetchAll(PDO::FETCH_ASSOC); // Grab the data
         <?php echo $b['SteamID']; ?>
       </td>
       <td>
-        <?php echo $b['BugReport']; ?>
+        <?php echo htmlspecialchars($b['BugReport']); ?>
       </td>
     </tr>
   <?php endforeach; ?>
@@ -53,6 +53,6 @@ $bug = $bug_report->fetchAll(PDO::FETCH_ASSOC); // Grab the data
         </table>
       </div>
     </div>
-<span class="credits">&copy; 2016 Subject_Alpha</span>
+<span class="credits">&copy; 2016 Subject_Alpha - <a href="https://github.com/Lunaversitay/Bug-Reporter/tree/master/web" style="color:#fff;">Fork</a></span>
   </body>
 </html>
